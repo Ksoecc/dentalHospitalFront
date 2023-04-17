@@ -1,0 +1,62 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 5rem);
+}
+
+.patient-list {
+  margin-top: 2rem;
+  width: 50%;
+}
+
+.patient-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.patient-item {
+  background-color: grey;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  padding: 0.75rem 1.25rem;
+  text-align: left;
+  display: flex;
+  justify-content: space-between; /* Butonu sağa taşımak için */
+}
+
+.welcome-text {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.modal {
+  position: fixed;
+  top: 50%;
+  right: 10%;
+  transform: translate(0, -50%); /* Ortalama */
+  background-color: rgb(163, 152, 152);
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px grey;
+  z-index: 1; /* Diğer öğelerin üzerine çıkması için */
+  padding: 1rem;
+}
+
+/* Buton stilini ayarlamak için */
+.modal button {
+  background-color: rgb(163, 152, 152);
+  color: rgb(2, 2, 2);
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Butonu detaylar penceresine yakınlaştırmak için */
+.modal button {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
